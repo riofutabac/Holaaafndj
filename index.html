@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Moderno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/04-BlackJack/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Blackjack</h1>
+    </header>
+    <main>
+
+        <section class="controls">
+            <button id="pedir-carta" class="btn" aria-label="Pedir carta">Pedir Carta</button>
+            <button id="plantarse" class="btn" aria-label="Plantarse">Plantarse</button>
+            <button id="nueva-partida" class="btn btn-new" aria-label="Iniciar nueva partida">Nueva Partida</button>
+       
+        </section>
+        
+        <div class="game-area">
+            <section class="dealer-section">
+                <h2>Mano del Crupier</h2>
+                <div id="cartas-crupier" class="cards-container">
+                    <!-- <img class="carta" src="/04-BlackJack/assets/cartas/2C.png" alt="Carta del crupier">
+                    <img class="carta" src="/04-BlackJack/assets/cartas/2C.png" alt="Carta del crupier">
+                -->   
+                </div>
+                <p class="total">Total: <span id="total-crupier">0</span></p>
+            </section>
+            
+            <section class="player-section">
+                <h2>Tu Mano</h2>
+                <div id="cartas-jugador" class="cards-container">
+                    <!-- <img class="carta" src="/04-BlackJack/assets/cartas/2C.png" alt="Tu carta">
+                    <img class="carta" src="/04-BlackJack/assets/cartas/2C.png" alt="Tu carta"> -->
+                </div>
+                <p class="total">Total: <span id="total-jugador">0</span></p>
+            </section>
+        </div>
+        <div id="resultado" class="resultado"></div>
+        
+    </main>
+    <footer>
+        <p>whoisalel</p>
+    </footer>
+    <script src="/04-BlackJack/js/juego.js"></script>
+</body>
+</html>
