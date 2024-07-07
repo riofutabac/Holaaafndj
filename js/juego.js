@@ -75,7 +75,7 @@ const turnoCrupier = () => {
 
         const imgCrupier = document.createElement('img');
         imgCrupier.classList.add('carta');
-        imgCrupier.src = `/04-BlackJack/assets/cartas/${carta}.png`;
+        imgCrupier.src = `/assets/cartas/${carta}.png`;
         divsCartasCrupier.append(imgCrupier);
 
         if (puntosJugador > 21) break;
@@ -125,7 +125,7 @@ btnPedir.addEventListener('click', function(){
     //img class="carta" src="/04-BlackJack/assets/cartas/2C.png" alt="Tu carta"\
     const img = document.createElement('img'); //creamos el <img>
     img.classList.add('carta');// <img class='carta'>
-    let srcImg = `/04-BlackJack/assets/cartas/${carta}.png`;
+    let srcImg = `/assets/cartas/${carta}.png`;
     img.src = srcImg;// img class="carta" src="/04-BlackJack/assets/cartas/2C.png"
     divsCartasJugador.append(img);
 
